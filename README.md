@@ -15,7 +15,8 @@
 
 # Script Preview
 <p align="center">
-<img src="https://i.postimg.cc/MX8jXYy3/IMG-20221023-081152.jpg"
+<img src="https://i.postimg.cc/Y2vNnnj7/IMG-20221023-081152.jpg"
+<img src="https://i.postimg.cc/kMLQkQtb/IMG-20221023-081241.jpg"
 
 [url=https://postimg.cc/vDLxn6hY][img]https://i.postimg.cc/vDLxn6hY/IMG-20221023-081241.jpg[/img][/url]
 
