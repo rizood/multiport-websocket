@@ -25,7 +25,7 @@ echo -e "\e[0m"
 echo ""
 sleep 1
 # Insert Password
-Password=MultiV7ByReyz
+Password=MultiV7Reyz
 # Execute
 read -p "Please Insert The License Key : " Passwordnya
 if [ $Password = $Passwordnya ]; then
@@ -33,7 +33,7 @@ clear
 echo -e ""
 echo -e "${green}Permission Accepted...${NC}"
 echo ""
-echo "Thanks For Using This Autoscript-Lite By Reyz-V4"
+echo "Thanks For Using This Autoscript-Lite By rizood"
 echo ""
 sleep 3
 else
@@ -58,7 +58,7 @@ echo -e " ${green}Please Insert Your Name${NC}"
 echo -e ""
 read -p " Client Name : " user
 echo -e ""
-echo -e " This Autoscript Is Free [ ${green}Established By Reyz-V4 2022${NC} ] "
+echo -e " This Autoscript Is Free [ ${green}Established By rizood 2022${NC} ] "
 echo -e ""
 echo "$user" >> /root/user
 clear
@@ -67,7 +67,7 @@ echo -e " ${green}Please Insert Domain${NC}"
 echo -e ""
 read -p " Hostname / Domain: " host
 echo -e ""
-echo -e " This Autoscript Is Free [ ${green}Established By Reyz-V4 2022${NC} ] "
+echo -e " This Autoscript Is Free [ ${green}Established By rizood 2022${NC} ] "
 echo -e ""
 echo "IP=$host" >> /var/lib/premium-script/ipvps.conf
 echo "IP=$host" >> /var/lib/crot-script/ipvps.conf
@@ -79,14 +79,14 @@ sleep 1
 #Install SSH-VPN
 echo -e "\e[0;32mINSTALLING SSH-VPN...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/rizood/multiv7/main/SETUP/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/rizood/multiport-websocket/main/SETUP/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 echo -e "\e[0;32mDONE INSTALLING SSH-VPN\e[0m"
 echo -e ""
 sleep 1
 #Install Xray
 echo -e "\e[0;32mINSTALLING XRAY CORE...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/rizood/multiv7/main/SETUP/ins-xray.sh && chmod +x ins-xray.sh && screen -S ins-xray ./ins-xray.sh
+wget https://raw.githubusercontent.com/rizood/multiport-websocket/main/SETUP/ins-xray.sh && chmod +x ins-xray.sh && screen -S ins-xray ./ins-xray.sh
 echo -e "\e[0;32mDONE INSTALLING XRAY CORE\e[0m"
 echo -e ""
 sleep 1
@@ -94,7 +94,7 @@ clear
 #Install SET-BR
 echo -e "\e[0;32mINSTALLING SET-BR...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/rizood/multiv7/main/SETUP/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/rizood/multiport-websocket/main/SETUP/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 echo -e "\e[0;32mDONE INSTALLING SET-BR...\e[0m"
 echo -e ""
 sleep 1
@@ -165,8 +165,8 @@ echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   [ DEV INFORMATION ]" | tee -a log-install.txt
 echo -e "${purple}   -------------------${NC}" | tee -a log-install.txt
-echo "   - Autoscript-Lite By      : Reyz-V4"  | tee -a log-install.txt
-echo "   - Telegram                : t.me/GHReyz"  | tee -a log-install.txt
+echo "   - Autoscript-Lite By      : rizood"  | tee -a log-install.txt
+echo "   - Telegram                : t.me/rizood"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo -e "${purple}════════════════${NC}Autoscript-Lite By Reyz-V4${purple}════════════════${NC}" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
