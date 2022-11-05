@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By rizood
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -199,13 +199,13 @@ proxies:
     sni: ${sni}
     udp: true
 proxy-groups:
-  - name: VINSTECHMY-AUTOSCRIPT
+  - name: rizood-AUTOSCRIPT
     type: select
     proxies:
       - TROJAN_GO_${user}
       - DIRECT
 rules:
-  - MATCH,VINSTECHMY-AUTOSCRIPT
+  - MATCH,rizood-AUTOSCRIPT
 EOF
 
 cat > /usr/local/etc/xray/$user-TRGO-WS.yaml <<EOF
@@ -353,13 +353,13 @@ proxies:
         Host: ${domain}
     udp: true
 proxy-groups:
-  - name: VINSTECHMY-AUTOSCRIPT
+  - name: rizood-AUTOSCRIPT
     type: select
     proxies:
       - TROJAN_GO_${user}
       - DIRECT
 rules:
-  - MATCH,VINSTECHMY-AUTOSCRIPT
+  - MATCH,rizood-AUTOSCRIPT
 EOF
 
 cat > /usr/local/etc/xray/$user-TRGODIGI.yaml <<EOF
@@ -507,13 +507,13 @@ proxies:
         Host: ${domain}
     udp: true
 proxy-groups:
-  - name: VINSTECHMY-AUTOSCRIPT
+  - name: rizood-AUTOSCRIPT
     type: select
     proxies:
       - TROJAN_GO_DIGI_${user}
       - DIRECT
 rules:
-  - MATCH,VINSTECHMY-AUTOSCRIPT
+  - MATCH,rizood-AUTOSCRIPT
 EOF
 
 # Move Yaml To html
@@ -548,5 +548,5 @@ echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
 echo -e "════════════════════════════════════════"
 echo -e ""
-echo -e "Autoscript By Vinstechmy"
+echo -e "Autoscript By Reyz-V4"
 echo -e ""
