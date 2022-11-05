@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By rizood
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -46,7 +46,7 @@ mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory \
-        --register-account  --accountemail muhammadzamri150@gmail.com
+        --register-account  --accountemail rizoodmultiport@gmail.com
 /root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --issue -d $domain --standalone -k ec-256			   
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
 systemctl restart $Cek

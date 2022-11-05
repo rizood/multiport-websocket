@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Reyz-V4
+#Autoscript-Lite By Vinstechmy
 clear
 neofetch
 cat /root/log-install.txt

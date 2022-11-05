@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Reyz-V4
+#Autoscript-Lite By rizood
 P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
@@ -78,7 +78,7 @@ echo -e "\e[36m╘════════════════════�
 echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
 echo ""
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " Version       :\033[1;36m Multiport Websocket V1.0\e[0m"
+echo -e " Version       :\033[1;36m Multiport Websocket V6\e[0m"
 echo -e " Autoscript By : Reyz-V4"
 echo -e " Expiry Script : Lifetime"
 echo -e " Client Name   : $user"
