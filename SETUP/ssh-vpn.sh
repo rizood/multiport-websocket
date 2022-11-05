@@ -1,6 +1,6 @@
 #!/bin/bash
 # SSH-VPN Installation Setup
-# By Vinstechmy
+# By rizood
 # ==================================
 red='\e[1;31m'
 green='\e[0;32m'
@@ -19,10 +19,10 @@ ver=$VERSION_ID
 country="MY"
 state="Perak"
 locality="Parit Buntar"
-organization="Vinstechmy-Project"
-organizationalunit="Vinstechmy-Project"
-commonname="Vinstechmy-Project"
-email="vinstechmy-project@gmail.com"
+organization="rizood-Project"
+organizationalunit="rizood-Project"
+commonname="rizood-Project"
+email="muhammadzamri150@gmail.com"
 
 # go to root
 cd
@@ -91,9 +91,9 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/rizood/multiv7/main/OTHERS/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/rizood/multiport-websocket/main/OTHERS/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/rizood/multiv7/main/OTHERS/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/rizood/multiport-websocket/main/OTHERS/vps.conf"
 /etc/init.d/nginx restart
 
 # setting vnstat
@@ -144,7 +144,7 @@ echo 'Config file is at /usr/local/ddos/ddos.conf'
 echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
-wget -q -O /etc/issue.net "https://raw.githubusercontent.com/rizood/multiv7/main/OTHERS/issues.net" && chmod +x /etc/issue.net
+wget -q -O /etc/issue.net "https://raw.githubusercontent.com/rizood/multiport-websocket/main/OTHERS/issues.net" && chmod +x /etc/issue.net
 echo "Banner /etc/issue.net" >>/etc/ssh/sshd_config
 
 # blockir torrent
@@ -173,15 +173,15 @@ systemctl enable resolvconf.service
 
 # download script
 cd /usr/bin
-wget -O add-host "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/add-host.sh"
-wget -O speedtest "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/speedtest_cli.py"
-wget -O xp "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/xp.sh"
-wget -O menu "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/menu.sh"
-wget -O status "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/status.sh"
-wget -O info "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/info.sh"
-wget -O restart "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/restart.sh"
-wget -O ram "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/ram.sh"
-wget -O dns "https://raw.githubusercontent.com/rizood/multiv7/main/SSH/dns.sh"
+wget -O add-host "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/add-host.sh"
+wget -O speedtest "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/speedtest_cli.py"
+wget -O xp "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/xp.sh"
+wget -O menu "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu.sh"
+wget -O status "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/status.sh"
+wget -O info "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/info.sh"
+wget -O restart "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/restart.sh"
+wget -O ram "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/ram.sh"
+wget -O dns "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/dns.sh"
 wget -O nf "https://github.com/sjlleo/netflix-verify/releases/download/2.61/nf_2.61_linux_amd64"
 chmod +x menu
 chmod +x add-host
