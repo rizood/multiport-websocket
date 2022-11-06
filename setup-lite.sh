@@ -122,7 +122,7 @@ echo -e "    |      Installation Has Been Completed      |"
 echo -e "    '-------------------------------------------'"
 echo ""
 echo ""
-echo -e "${purple}═════════════════════${NC}[-Autoscript-Lite-]${purple}═════════════════════${NC}" | tee -a log-install.txt
+echo -e "${purple}═════════════════════${NC}[-Autoscript-Lite By Reyz-V4]${purple}═════════════════════${NC}" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "    >>> Service Details <<<"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -165,8 +165,8 @@ echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   [ DEV INFORMATION ]" | tee -a log-install.txt
 echo -e "${purple}   -------------------${NC}" | tee -a log-install.txt
-echo "   - Autoscript-Lite By      : rizood"  | tee -a log-install.txt
-echo "   - Telegram                : t.me/rizood"  | tee -a log-install.txt
+echo "   - Autoscript-Lite By      : GHReyz"  | tee -a log-install.txt
+echo "   - Telegram                : t.me/GHReyz"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo -e "${purple}════════════════${NC}Autoscript-Lite By Reyz-V4${purple}════════════════${NC}" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
