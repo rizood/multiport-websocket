@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By Reyz-V4
 clear
 domain=$(cat /usr/local/etc/xray/domain)
 
@@ -194,13 +194,13 @@ proxies:
     sni: ${sni}
     udp: true
 proxy-groups:
-  - name: VINSTECHMY-AUTOSCRIPT
+  - name: Reyz-V4-AUTOSCRIPT
     type: select
     proxies:
       - XRAY_TROJAN_TCP_${user}
       - DIRECT
 rules:
-  - MATCH,VINSTECHMY-AUTOSCRIPT
+  - MATCH,Reyz-V4-AUTOSCRIPT
 EOF
 
 # Move Yaml To html
@@ -225,5 +225,5 @@ echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
 echo -e "═════════════════════════════════════════"
 echo -e ""
-echo -e "Autoscript By Vinstechmy"
+echo -e "Autoscript By Reyz-V4"
 echo -e ""

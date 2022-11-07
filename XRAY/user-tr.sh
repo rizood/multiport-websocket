@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By Reyz-V4
 clear
 NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/usr/local/etc/xray/trojanws.json")
         if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
@@ -79,5 +79,5 @@ echo -e "Created On        : $hariini"
 echo -e "Expired On        : $exp"
 echo -e "════════════════════════════════════════"
 echo -e ""
-echo -e "Autoscript By Vinstechmy"
+echo -e "Autoscript By Reyz-V4"
 echo -e ""

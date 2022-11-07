@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By Reyz-V4
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -50,5 +50,5 @@ echo " Client Name : $user"
 echo " Expired On  : $exp4"
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
-echo -e "Autoscript By Vinstechmy"
+echo -e "Autoscript By Reyz-V4"
 echo -e ""
