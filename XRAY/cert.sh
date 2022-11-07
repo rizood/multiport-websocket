@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By Reyz-V4
 red='\e[1;31m'
 green='\e[0;32m'
 purple='\e[0;35m'
@@ -36,7 +36,7 @@ mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
 /root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory \
-        --register-account  --accountemail vinstechmymultiport@gmail.com
+        --register-account  --accountemail muhammadhariz282@gmail.com
 /root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --issue -d $domain --standalone -k ec-256			   
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
 echo -e "[ ${green}INFO${NC} ] Renew cert done... " 
