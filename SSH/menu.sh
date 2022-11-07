@@ -1,7 +1,7 @@
 #!/bin/bash
 #Autoscript-Lite By rizood
 P='\e[0;35m'
-B='\033[0;36m'
+B='\033[0;31m'
 N='\e[0m'
 # // Export Color & Information
 export RED='\033[0;31m'
@@ -9,7 +9,7 @@ export GREEN='\033[0;32m'
 export YELLOW='\033[0;33m'
 export BLUE='\033[0;34m'
 export PURPLE='\033[0;35m'
-export CYAN='\033[0;36m'
+export CYAN='\033[0;31m'
 export LIGHT='\033[0;37m'
 export NC='\033[0m'
 clear
@@ -32,9 +32,9 @@ else
     status_xray="${RED}OFF${NC}"
 fi
 
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 INFO SERVER                \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
+echo -e "\e[31m╒════════════════════════════════════════════╕\033[0m"
+echo -e " \E[0;47;30m               • INFO SERVER •              \E[0m"
+echo -e "\e[31m╘════════════════════════════════════════════╛\033[0m"
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
 upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
@@ -48,41 +48,37 @@ fi
 echo -e " VPN Core        :  XRAY-Core"
 echo -e " Domain          :  $domain"
 echo -e " IP VPS          :  $IPVPS"
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e "     [ XRAY-CORE${NC} : ${status_xray} ]   [ NGINX${NC} : ${status_nginx} ]"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                 XRAY MENU                  \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m•1 \033[0m]  XRAY Vmess WS Panel
- [\033[1;36m•2 \033[0m]  XRAY Vless WS Panel
- [\033[1;36m•3 \033[0m]  XRAY Trojan WS Panel
- [\033[1;36m•4 \033[0m]  XRAY Vless TCP XTLS Panel
- [\033[1;36m•5 \033[0m]  XRAY Trojan TCP Panel
- [\033[1;36m•6 \033[0m]  Trojan GO Panel"
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;41;36m                SYSTEM MENU                 \E[0m"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m
- [\033[1;36m•7 \033[0m]  Change Domain
- [\033[1;36m•8 \033[0m]  Renew Certificate XRAY
- [\033[1;36m•9 \033[0m]  Check VPN Status
- [\033[1;36m•10\033[0m]  Check VPN Port
- [\033[1;36m•11\033[0m]  Restart VPN Services
- [\033[1;36m•12\033[0m]  Speedtest VPS
- [\033[1;36m•13\033[0m]  Check RAM
- [\033[1;36m•14\033[0m]  DNS Changer
- [\033[1;36m•15\033[0m]  Netflix Checker
- [\033[1;36m•16\033[0m]  Backup
- [\033[1;36m•17\033[0m]  Restore
-"
-echo -e " \033[1;37mPress [ Ctrl+C ] • To-Exit-Script\033[0m"
-echo ""
-echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
-echo -e " Version       :\033[1;36m Multiport Websocket V6\e[0m"
-echo -e " Autoscript By : Reyz-V4"
-echo -e " Expiry Script : Lifetime"
+echo -e " Version       :\033[1;31m SC (V6)\e[0m"
+echo -e " Expiry Script ::\033[1;31m Lifetime\e[0m"
 echo -e " Client Name   : $user"
-echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
+echo -e "\e[31m╒════════════════════════════════════════════╕\033[0m"
+echo -e " \E[0;47;30m               • XRAY MENU •                \E[0m"
+echo -e "\e[31m╘════════════════════════════════════════════╛\033[0m
+ [\033[1;31m•1 \033[0m]  XRAY Vmess WS Panel
+ [\033[1;31m•2 \033[0m]  XRAY Vless WS Panel
+ [\033[1;31m•3 \033[0m]  XRAY Trojan WS Panel
+ [\033[1;31m•4 \033[0m]  XRAY Vless TCP XTLS Panel
+ [\033[1;31m•5 \033[0m]  XRAY Trojan TCP Panel
+ [\033[1;31m•6 \033[0m]  Trojan GO Panel"
+echo -e "\e[31m╒════════════════════════════════════════════╕\033[0m"
+echo -e " \E[0;47;30m              • SYSTEM MENU •               \E[0m"
+echo -e "\e[31m╘════════════════════════════════════════════╛\033[0m
+ [\033[1;31m•7 \033[0m]  Change Domain
+ [\033[1;31m•8 \033[0m]  Renew Certificate XRAY
+ [\033[1;31m•9 \033[0m]  Check VPN Status
+ [\033[1;31m•10\033[0m]  Check VPN Port
+ [\033[1;31m•11\033[0m]  Restart VPN Services
+ [\033[1;31m•12\033[0m]  Speedtest VPS
+ [\033[1;31m•13\033[0m]  Check RAM
+ [\033[1;31m•14\033[0m]  DNS Changer
+ [\033[1;31m•15\033[0m]  Netflix Checker
+ [\033[1;31m•16\033[0m]  Backup
+ [\033[1;31m•17\033[0m]  Restore
+"
+echo -e "\e[31m╒════════════════════════════════════════════╕\033[0m"
+echo -e " Autoscript By  Reyz-V4"
+echo -e " XRAY${NC} : ${status_xray}     NGINX${NC} : ${status_nginx} "
+echo -e "\e[31m╘════════════════════════════════════════════╛\033[0m"
 echo
 echo -ne "Select menu : "; read x
 if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
