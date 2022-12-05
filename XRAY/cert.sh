@@ -1,50 +1,25 @@
 #!/bin/bash
-dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
-biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
-#########################
-
-MYIP=$(curl -sS ipv4.icanhazip.com)
-echo $Name > /usr/local/etc/.$Name.ini
-CekOne=$(cat /usr/local/etc/.$Name.ini)
-
-Bloman () {
-if [ -f "/etc/.$Name.ini" ]; then
-CekTwo=$(cat /etc/.$Name.ini)
-    if [ "$CekOne" = "$CekTwo" ]; then
-        res="Expired"
-    fi
-else
-res="Permission Accepted..."
-fi
-}
-
+#Autoscript-Lite By Reyz-V4
 red='\e[1;31m'
 green='\e[0;32m'
+purple='\e[0;35m'
+orange='\e[0;33m'
 NC='\e[0m'
-green() { echo -e "\\033[32;1m${*}\\033[0m"; }
-red() { echo -e "\\033[31;1m${*}\\033[0m"; }
-PERMISSION
-if [ -f /home/needupdate ]; then
-red "Your script need to update first !"
-exit 0
-elif [ "$res" = "Permission Accepted..." ]; then
-echo -ne
-else
-red "Permission Denied!"
-exit 0
-fi
-
-cekray=`cat /root/log-install.txt | grep -ow "XRAY" | sort | uniq`
-if [ "$cekray" = "XRAY" ]; then
-domainlama=`cat /etc/xray/domain`
-else
-domainlama=`cat /etc/v2ray/domain`
-fi
-
+source /var/lib/premium-script/ipvps.conf
+domain=$(cat /usr/local/etc/xray/domain)
 clear
 echo -e "[ ${green}INFO${NC} ] Start " 
 sleep 0.5
-domain=$(cat /var/lib/scrz-prem/ipvps.conf | cut -d'=' -f2)
+systemctl stop nginx
+systemctl stop xray.service
+systemctl stop xray@none.service
+systemctl stop xray@vless.service
+systemctl stop xray@vnone.service
+systemctl stop xray@trojanws.service
+systemctl stop xray@trnone.service
+systemctl stop xray@xtls.service
+systemctl stop xray@trojan.service
+systemctl stop trojan-go.service
 Cek=$(lsof -i:80 | cut -d' ' -f1 | awk 'NR==2 {print $1}')
 if [[ ! -z "$Cek" ]]; then
 sleep 1
@@ -55,21 +30,44 @@ echo -e "[ ${green}INFO${NC} ] Processing to stop $Cek "
 sleep 1
 fi
 echo -e "[ ${green}INFO${NC} ] Starting renew cert... " 
+rm -r /root/.acme.sh
 sleep 2
-/root/.acme.sh/acme.sh --issue -d $domain --debug --force --standalone --keylength ec-256
+mkdir /root/.acme.sh
+curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
+chmod +x /root/.acme.sh/acme.sh
+/root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory \
+        --register-account  --accountemail muhammadhariz282@gmail.com
+/root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --issue -d $domain --standalone -k ec-256			   
+~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
 echo -e "[ ${green}INFO${NC} ] Renew cert done... " 
 sleep 2
 echo -e "[ ${green}INFO${NC} ] Starting service $Cek " 
 sleep 2
-sed -i "s/$domainlama/$domain/g" /etc/xray/config.json
-sed -i "s/$domainlama/$domain/g" /usr/local/etc/xtls/config.json
-sed -i "s/$domainlama/$domain/g" /etc/trojan-go/config.json
-echo $domain > /etc/xray/domain
+echo $domain > /usr/local/etc/xray/domain
 systemctl restart $Cek
-systemctl restart trojan-go
-systemctl restart xtls
+sleep 1
+systemctl restart nginx
+sleep 1
+systemctl restart xray.service
+sleep 1
+systemctl restart xray@none.service
+sleep 1
+systemctl restart xray@vless.service
+sleep 1
+systemctl restart xray@vnone.service
+sleep 1
+systemctl restart xray@trojanws.service
+sleep 1
+systemctl restart xray@trnone.service
+sleep 1
+systemctl restart xray@xtls.service
+sleep 1
+systemctl restart xray@trojan.service
+sleep 1
+systemctl restart trojan-go.service
+sleep 1
 echo -e "[ ${green}INFO${NC} ] All finished... " 
 sleep 0.5
+clear
+neofetch
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
-v2ray-menu
