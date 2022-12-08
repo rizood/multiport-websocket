@@ -1,10 +1,10 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By Reyz-V4
 clear
 IP=$(wget -qO- icanhazip.com);
 date=$(date +"%Y-%m-%d")
 clear
-echo " VPS Data Backup By Vinstechmy "
+echo " VPS Data Backup By Reyz-V4 "
 sleep 1
 echo ""
 echo " Directory Created"
