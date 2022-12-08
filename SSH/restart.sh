@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By rizood
+#Autoscript-Lite By Reyz-V4
 clear
 /etc/init.d/fail2ban restart
 /etc/init.d/cron restart

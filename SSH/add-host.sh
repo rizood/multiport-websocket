@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By rizood
+#Autoscript-Lite By Reyz-V4
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -45,9 +45,9 @@ sleep 1
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
-/root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory \
-        --register-account  --accountemail muhammadhariz282@gmail.com
-/root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --issue -d $domain --standalone -k ec-256			   
+/root/.acme.sh/acme.sh --upgrade --auto-upgrade
+/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256			   
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
 systemctl restart $Cek
 sleep 1

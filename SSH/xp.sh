@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By rizood
+#Autoscript-Lite By Reyz-V4
 
 #----- Auto Remove Vmess
 data=( `cat /usr/local/etc/xray/config.json | grep '^###' | cut -d ' ' -f 2 | sort | uniq`);

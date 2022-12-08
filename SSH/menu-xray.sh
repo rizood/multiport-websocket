@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By rizood
+#Autoscript-Lite By Reyz-V4
 P='\e[0;35m'
 B='\033[0;36m'
 N='\e[0m'
