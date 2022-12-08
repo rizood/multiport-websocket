@@ -1,7 +1,4 @@
 #!/bin/bash
-# XRAY Core & Trojan-Go Installation Setup
-# By rizood
-#------------------------------------------
 red='\e[1;31m'
 green='\e[0;32m'
 purple='\e[0;35m'
