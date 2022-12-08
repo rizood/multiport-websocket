@@ -25,7 +25,7 @@ echo -e "\e[0m"
 echo ""
 sleep 1
 # Insert Password
-Password=multireyz
+Password=PremiumReyz
 # Execute
 read -p "Please Insert The License Key : " Passwordnya
 if [ $Password = $Passwordnya ]; then
@@ -33,7 +33,7 @@ clear
 echo -e ""
 echo -e "${green}Permission Accepted...${NC}"
 echo ""
-echo "Thanks For Using This Autoscript-Lite By Reyz-V4"
+echo "Thanks For Using This Autoscript By Reyz-V4"
 echo ""
 sleep 3
 else
@@ -118,16 +118,16 @@ clear
 echo ""
 echo ""
 echo -e "    .-------------------------------------------."
-echo -e "    |      Installation Has Been Completed      |"
+echo -e "    |          Siap Installation Bang           |"
 echo -e "    '-------------------------------------------'"
 echo ""
 echo ""
-echo -e "${purple}═════════════════════${NC}[-Autoscript-Lite By Reyz-V4]${purple}═════════════════════${NC}" | tee -a log-install.txt
+echo -e "${orange}═════════════════════${NC}[-Autoscript By Reyz-V4]${purple}═════════════════════${NC}" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "    >>> Service Details <<<"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   [ XRAY INFORMATION ]" | tee -a log-install.txt
-echo -e "${purple}   --------------------${NC}" | tee -a log-install.txt
+echo -e "${orange}   --------------------${NC}" | tee -a log-install.txt
 echo "   - XRAY VMESS WS TLS       : 443"  | tee -a log-install.txt
 echo "   - XRAY VLESS WS TLS       : 443"  | tee -a log-install.txt
 echo "   - XRAY TROJAN WS TLS      : 443"  | tee -a log-install.txt
@@ -139,7 +139,7 @@ echo "   - XRAY TROJAN WS None TLS : 80"  | tee -a log-install.txt
 echo "   - TROJAN GO WS            : 8443"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   [ YAML INFORMATION ]" | tee -a log-install.txt
-echo -e "${purple}   --------------------${NC}" | tee -a log-install.txt
+echo -e "${orange}   --------------------${NC}" | tee -a log-install.txt
 echo "   - YAML XRAY VMESS WS"  | tee -a log-install.txt
 echo "   - YAML XRAY VLESS WS"  | tee -a log-install.txt
 echo "   - YAML XRAY TROJAN WS"  | tee -a log-install.txt
@@ -148,7 +148,7 @@ echo "   - YAML XRAY TROJAN TCP"  | tee -a log-install.txt
 echo "   - YAML TROJAN GO"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   [ SERVER INFORMATION ]"  | tee -a log-install.txt
-echo -e "${purple}   ----------------------${NC}" | tee -a log-install.txt
+echo -e "${orange}   ----------------------${NC}" | tee -a log-install.txt
 echo "   - Timezone                : Asia/Kuala_Lumpur (GMT +8)"  | tee -a log-install.txt
 echo "   - Fail2Ban                : [ON]"  | tee -a log-install.txt
 echo "   - Dflate                  : [ON]"  | tee -a log-install.txt
@@ -164,8 +164,8 @@ echo "   - White Label" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   [ DEV INFORMATION ]" | tee -a log-install.txt
-echo -e "${purple}   -------------------${NC}" | tee -a log-install.txt
-echo "   - Autoscript-Lite By      : GHReyz"  | tee -a log-install.txt
+echo -e "${orange}   -------------------${NC}" | tee -a log-install.txt
+echo "   - Autoscript By           : GHReyz/ReyzV4"  | tee -a log-install.txt
 echo "   - Telegram                : t.me/GHReyz"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo -e "${purple}════════════════${NC}Autoscript-Lite By Reyz-V4${purple}════════════════${NC}" | tee -a log-install.txt
