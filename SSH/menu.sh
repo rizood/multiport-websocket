@@ -6,7 +6,7 @@ N='\e[0m'
 # // Export Color & Information
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
-export YELLOW='\033[0;33m'
+export YELLOW='\033[1;33m'
 export BLUE='\033[0;34m'
 export PURPLE='\033[0;35m'
 export CYAN='\033[0;31m'
@@ -19,7 +19,7 @@ user=$(cat /usr/local/etc/xray/user)
 # // nginx status
 nginx=$( systemctl status nginx | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $nginx == "running" ]]; then
-    status_nginx="${GREEN}ON${NC}"
+    status_nginx="${YELLOW}ON${NC}"
 else
     status_nginx="${RED}OFF${NC}"
 fi
@@ -27,7 +27,7 @@ fi
 # // xray status
 xray=$( systemctl status xray | grep Active | awk '{print $3}' | sed 's/(//g' | sed 's/)//g' )
 if [[ $xray == "running" ]]; then
-    status_xray="${GREEN}ON${NC}"
+    status_xray="${YELLOW}ON${NC}"
 else
     status_xray="${RED}OFF${NC}"
 fi
@@ -51,6 +51,7 @@ echo -e " IP VPS          :  $IPVPS"
 echo -e " Version         : \033[1;31m SC (V6)\e[0m"
 echo -e " Expiry Script   : \033[1;31m Lifetime\e[0m"
 echo -e " Client Name     :  $user"
+echo -e " Created By      :  @GHReyz"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;47;30m               • XRAY MENU •                \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m
@@ -73,11 +74,9 @@ echo -e "\e[35m╘════════════════════�
  [\033[1;31m•14\033[0m]  DNS Changer
  [\033[1;31m•15\033[0m]  Netflix Checker
  [\033[1;31m•16\033[0m]  Backup
- [\033[1;31m•17\033[0m]  Restore
-"
+ [\033[1;31m•17\033[0m]  Restore"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
-echo -e " Autoscript By Reyz-V4"
-echo -e " XRAY${NC} : ${status_xray}     NGINX${NC} : ${status_nginx} "
+echo -e " Xray-Core${NC} : ${status_xray}     Nginx${NC} : ${status_nginx} "
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m"
 echo
 echo -ne "Select menu : "; read x
