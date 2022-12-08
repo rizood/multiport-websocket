@@ -25,7 +25,7 @@ echo -e "\e[0m"
 echo ""
 sleep 1
 # Insert Password
-Password=MultiV7Reyz
+Password=hariz
 # Execute
 read -p "Please Insert The License Key : " Passwordnya
 if [ $Password = $Passwordnya ]; then
