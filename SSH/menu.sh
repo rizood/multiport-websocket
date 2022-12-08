@@ -48,35 +48,35 @@ fi
 echo -e " VPN Core        :  XRAY-Core"
 echo -e " Domain          :  $domain"
 echo -e " IP VPS          :  $IPVPS"
-echo -e " Version         : \033[1;31m SC (V6)\e[0m"
+echo -e " Version         : \033[1;31m SC (V7)\e[0m"
 echo -e " Expiry Script   : \033[1;31m Lifetime\e[0m"
 echo -e " Client Name     :  $user"
 echo -e " Created By      :  @GHReyz"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;47;30m               • XRAY MENU •                \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m
- [\033[1;31m•1 \033[0m]  XRAY Vmess WS Panel
- [\033[1;31m•2 \033[0m]  XRAY Vless WS Panel
- [\033[1;31m•3 \033[0m]  XRAY Trojan WS Panel
- [\033[1;31m•4 \033[0m]  XRAY Vless TCP XTLS Panel
- [\033[1;31m•5 \033[0m]  XRAY Trojan TCP Panel
- [\033[1;31m•6 \033[0m]  Trojan GO Panel"
+ [\033[1;36m•1 \033[0m]  XRAY Vmess WS Panel
+ [\033[1;36m•2 \033[0m]  XRAY Vless WS Panel
+ [\033[1;36m•3 \033[0m]  XRAY Trojan WS Panel
+ [\033[1;32m•4 \033[0m]  XRAY Vless TCP XTLS Panel
+ [\033[1;32m•5 \033[0m]  XRAY Trojan TCP Panel
+ [\033[1;32m•6 \033[0m]  Trojan GO Panel"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;47;30m              • SYSTEM MENU •               \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m
  [\033[1;31m•7 \033[0m]  Change Domain
  [\033[1;31m•8 \033[0m]  Renew Certificate XRAY
  [\033[1;31m•9 \033[0m]  Check VPN Status
- [\033[1;31m•10\033[0m]  Check VPN Port
- [\033[1;31m•11\033[0m]  Restart VPN Services
- [\033[1;31m•12\033[0m]  Speedtest VPS
- [\033[1;31m•13\033[0m]  Check RAM
- [\033[1;31m•14\033[0m]  DNS Changer
- [\033[1;31m•15\033[0m]  Netflix Checker
- [\033[1;31m•16\033[0m]  Backup
- [\033[1;31m•17\033[0m]  Restore"
+ [\033[1;33m•10\033[0m]  Check VPN Port
+ [\033[1;33m•11\033[0m]  Restart VPN Services
+ [\033[1;33m•12\033[0m]  Speedtest VPS
+ [\033[1;34m•13\033[0m]  Check RAM
+ [\033[1;34m•14\033[0m]  DNS Changer
+ [\033[1;34m•15\033[0m]  Netflix Checker
+ [\033[1;35m•16\033[0m]  Backup
+ [\033[1;35m•17\033[0m]  Restore"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
-echo -e "      Xray-Core${NC} : ${status_xray}     Nginx${NC} : ${status_nginx} "
+echo -e "           Xray-Core${NC} : ${status_xray}     Nginx${NC} : ${status_nginx} "
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m"
 echo
 echo -ne "Select menu : "; read x
