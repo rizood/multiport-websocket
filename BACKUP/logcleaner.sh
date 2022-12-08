@@ -1,5 +1,5 @@
 #!/bin/bash
-#Autoscript-Lite By Vinstechmy
+#Autoscript-Lite By Reyz-V4
 clear
 data=(`find /var/log/ -name '*.log'`);
 for log in "${data[@]}"
