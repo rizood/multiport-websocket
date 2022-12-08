@@ -1360,12 +1360,12 @@ wget -O port-trgo "https://raw.githubusercontent.com/rizood/multiport-websocket/
 # // MENU FILES
 echo -e "[ ${green}INFO${NC} ] Downloading Menu Files"
 sleep 1
-wget -O menu-ws "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-ws.sh" && chmod +x menu-ws
-wget -O menu-vless "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-vless.sh" && chmod +x menu-vless
-wget -O menu-tr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-tr.sh" && chmod +x menu-tr
-wget -O menu-xray "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-xray.sh" && chmod +x menu-xray
-wget -O menu-xtr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-xtr.sh" && chmod +x menu-xtr
-wget -O menu-trgo "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-trgo.sh" && chmod +x menu-trgo
+wget -O menu-ws "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-ws.sh" && chmod +x menu-ws
+wget -O menu-vless "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-vless.sh" && chmod +x menu-vless
+wget -O menu-tr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-tr.sh" && chmod +x menu-tr
+wget -O menu-xray "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-xray.sh" && chmod +x menu-xray
+wget -O menu-xtr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-xtr.sh" && chmod +x menu-xtr
+wget -O menu-trgo "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-trgo.sh" && chmod +x menu-trgo
 
 cd
 mv /root/domain /usr/local/etc/xray/ 
