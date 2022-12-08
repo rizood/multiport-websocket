@@ -51,7 +51,7 @@ echo -e " IP VPS          :  $IPVPS"
 echo -e " Version         : \033[1;31m SC (V6)\e[0m"
 echo -e " Expiry Script   : \033[1;31m Lifetime\e[0m"
 echo -e " Client Name     :  $user"
-echo -e " Telegram Owner  :  @GHReyz
+echo -e " Telegram Owner  :  @GHReyz"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
 echo -e " \E[0;47;30m               • XRAY MENU •                \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m
