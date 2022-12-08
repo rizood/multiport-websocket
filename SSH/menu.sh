@@ -78,8 +78,8 @@ echo -e "\e[35m╘════════════════════�
  [\033[1;35m•16\033[0m]  Backup
  [\033[1;35m•17\033[0m]  Restore"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
-echo -e "${GREEN}    【 Created By : https://t.me/GHReyz 】"
-echo -e "    【 Xray-Core${NC} : ${status_xray} 】   【 Nginx${NC} : ${status_nginx} 】" 
+echo -e "${GREEN}   【 Created By : https://t.me/GHReyz 】"
+echo -e "   【 Xray-Core${NC} : ${status_xray} 】   【 Nginx${NC} : ${status_nginx} 】" 
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m"
 echo
 echo -ne "Select menu : "; read x
