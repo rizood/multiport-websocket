@@ -55,13 +55,14 @@ mv xray /usr/local/bin/xray
 chmod +x /usr/local/bin/xray
 
 # generate certificates
+systemctl stop nginx
 mkdir /root/.acme.sh
 curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
 chmod +x /root/.acme.sh/acme.sh
-/root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory \
-        --register-account  --accountemail rizoodmultiport@gmail.com
-/root/.acme.sh/acme.sh --server https://api.buypass.com/acme/directory --issue -d $domain --standalone -k ec-256			   
-~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /usr/local/etc/xray/xray.crt --keypath /usr/local/etc/xray/xray.key --ecc
+/root/.acme.sh/acme.sh --upgrade --auto-upgrade
+/root/.acme.sh/acme.sh --set-default-ca --server letsencrypt
+/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
+~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
 sleep 1
 
 # Nginx directory file download
@@ -956,7 +957,7 @@ rm -rf /etc/systemd/system/xray@.service.d
 cat> /etc/systemd/system/xray.service << END
 [Unit]
 Description=XRAY-Websocket Service
-Documentation=https://rizood-Project.net https://github.com/XTLS/Xray-core
+Documentation=https://${GitUser}-Project.net https://github.com/XTLS/Xray-core
 After=network.target nss-lookup.target
 
 [Service]
@@ -979,7 +980,7 @@ END
 cat> /etc/systemd/system/xray@.service << END
 [Unit]
 Description=XRAY-Websocket Service
-Documentation=https://rizood-Project.net https://github.com/XTLS/Xray-core
+Documentation=https://${GitUser}-Project.net https://github.com/XTLS/Xray-core
 After=network.target nss-lookup.target
 
 [Service]
@@ -1048,7 +1049,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation /' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation /proxyuntuksshwstls' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://127.0.0.1:700;' /etc/nginx/conf.d/xray.conf
@@ -1094,7 +1095,6 @@ sed -i '$ ireturn 400;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 sed -i '$ iroot /usr/share/nginx/html/;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iindex index.html index.htm;' /etc/nginx/conf.d/xray.conf
-sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
 sleep 1
@@ -1244,7 +1244,7 @@ cat > /usr/local/etc/xray/trgo.json << END
 {
   "run_type": "server",
   "local_addr": "0.0.0.0",
-  "local_port": 8443,
+  "local_port": 8000,
   "remote_addr": "127.0.0.1",
   "remote_port": 2063,
   "log_level": 1,
@@ -1308,7 +1308,7 @@ END
 cat > /etc/systemd/system/trojan-go.service << END
 [Unit]
 Description=Trojan-Go Service
-Documentation=https://rizood-project.net
+Documentation=https://${GitUser}-project.net
 After=network.target nss-lookup.target
 
 [Service]
@@ -1332,8 +1332,8 @@ cat> /usr/local/etc/xray/uuid.txt <<END
 $uuid
 END
 
-iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8443 -j ACCEPT
-iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8443 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 8000 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 8000 -j ACCEPT
 iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save > /dev/null
@@ -1360,12 +1360,12 @@ wget -O port-trgo "https://raw.githubusercontent.com/rizood/multiport-websocket/
 # // MENU FILES
 echo -e "[ ${green}INFO${NC} ] Downloading Menu Files"
 sleep 1
-wget -O menu-ws "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-ws.sh" && chmod +x menu-ws
-wget -O menu-vless "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-vless.sh" && chmod +x menu-vless
-wget -O menu-tr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-tr.sh" && chmod +x menu-tr
-wget -O menu-xray "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-xray.sh" && chmod +x menu-xray
-wget -O menu-xtr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-xtr.sh" && chmod +x menu-xtr
-wget -O menu-trgo "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/menu-trgo.sh" && chmod +x menu-trgo
+wget -O menu-ws "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-ws.sh" && chmod +x menu-ws
+wget -O menu-vless "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-vless.sh" && chmod +x menu-vless
+wget -O menu-tr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-tr.sh" && chmod +x menu-tr
+wget -O menu-xray "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-xray.sh" && chmod +x menu-xray
+wget -O menu-xtr "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-xtr.sh" && chmod +x menu-xtr
+wget -O menu-trgo "https://raw.githubusercontent.com/rizood/multiport-websocket/main/menu/menu-trgo.sh" && chmod +x menu-trgo
 
 cd
 mv /root/domain /usr/local/etc/xray/ 
