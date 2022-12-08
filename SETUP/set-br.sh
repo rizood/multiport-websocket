@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set-Backup Installation
-# By rizood
+# By Reyz-V4
 #-----------------------------
 curl https://rclone.org/install.sh | bash
 printf "q\n" | rclone config

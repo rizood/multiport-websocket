@@ -1,6 +1,6 @@
 #!/bin/bash
 # SSH-VPN Installation Setup
-# By rizood
+# By Reyz-V4
 # ==================================
 red='\e[1;31m'
 green='\e[0;32m'
@@ -19,10 +19,10 @@ ver=$VERSION_ID
 country="MY"
 state="Perak"
 locality="Parit Buntar"
-organization="rizood-Project"
-organizationalunit="rizood-Project"
-commonname="rizood-Project"
-email="muhammadzamri150@gmail.com"
+organization="Reyz-V4-Project"
+organizationalunit="Reyz-V4-Project"
+commonname="Reyz-V4-Project"
+email="Reyz-V4-project@gmail.com"
 
 # go to root
 cd
