@@ -31,11 +31,11 @@ if [[ $xray == "running" ]]; then
 else
     status_xray="${RED}OFF${NC}"
 fi
-echo -e "\033[1;31m      ╔═╗┬─┐┌─┐┌┬┐┬┬ ┬┌┬┐  ╔═╗┌─┐┬─┐┬┌─┐┌┬┐" 
-echo -e "\033[1;31m      ╠═╝├┬┘├┤ │││││ ││││  ╚═╗│  ├┬┘│├─┘ │" 
-echo -e "\033[1;31m      ╩  ┴└─└─┘┴ ┴┴└─┘┴ ┴  ╚═╝└─┘┴└─┴┴   ┴ "                                                                                                          
+echo -e "\033[1;31m     ╔═╗┬─┐┌─┐┌┬┐┬┬ ┬┌┬┐  ╔═╗┌─┐┬─┐┬┌─┐┌┬┐" 
+echo -e "\033[1;31m     ╠═╝├┬┘├┤ │││││ ││││  ╚═╗│  ├┬┘│├─┘ │" 
+echo -e "\033[1;31m     ╩  ┴└─└─┘┴ ┴┴└─┘┴ ┴  ╚═╝└─┘┴└─┴┴   ┴ "                                                                                                          
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;47;30m               ⋆ INFO SERVER ⋆              \E[0m"
+echo -e " \E[0;47;30m               ⋆ ɪɴғᴏ sᴇʀᴠᴇʀ ⋆              \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m"
 uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
 upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
@@ -53,9 +53,9 @@ echo -e " IP VPS          :  $IPVPS"
 echo -e " Version         : \033[1;31m SC (V7)\e[0m"
 echo -e " Expiry Script   : \033[1;31m Lifetime\e[0m"
 echo -e " Client Name     :  $user"
-echo -e " Autoscript By   :  @GHReyz"
+echo -e " Telegram Owner  :  @GHReyz"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;47;30m               ⋆ XRAY MENU ⋆                \E[0m"
+echo -e " \E[0;47;30m               ⋆ xʀᴀʏ ᴍᴇɴᴜ ⋆                \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m
  [\033[1;36m•1 \033[0m]  XRAY Vmess WS Panel
  [\033[1;36m•2 \033[0m]  XRAY Vless WS Panel
@@ -64,7 +64,7 @@ echo -e "\e[35m╘════════════════════�
  [\033[1;32m•5 \033[0m]  XRAY Trojan TCP Panel
  [\033[1;32m•6 \033[0m]  Trojan GO Panel"
 echo -e "\e[35m╒════════════════════════════════════════════╕\033[0m"
-echo -e " \E[0;47;30m              ⋆ SYSTEM MENU ⋆               \E[0m"
+echo -e " \E[0;47;30m              ⋆ sʏsᴛᴇᴍ ᴍᴇɴᴜ ⋆               \E[0m"
 echo -e "\e[35m╘════════════════════════════════════════════╛\033[0m
  [\033[1;31m•7 \033[0m]  Change Domain
  [\033[1;31m•8 \033[0m]  Renew Certificate XRAY
