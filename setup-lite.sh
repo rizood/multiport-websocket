@@ -13,7 +13,6 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		exit 1
 fi
 MYIP=$(wget -qO- icanhazip.com/ip);
-secs_to_human() {
     echo "Installation time : $(( ${1} / 3600 )) hours $(( (${1} / 60) % 60 )) minutes $(( ${1} % 60 )) seconds"
 }
 start=$(date +%s)
