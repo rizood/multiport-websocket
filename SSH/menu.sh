@@ -76,7 +76,8 @@ echo -e "\e[36m╘════════════════════�
  [\033[1;34m•14\033[0m]  DNS Changer
  [\033[1;34m•15\033[0m]  Netflix Checker
  [\033[1;35m•16\033[0m]  Backup
- [\033[1;35m•17\033[0m]  Restore"
+ [\033[1;35m•17\033[0m]  Restore
+ [\033[1;35m•18\033[0m]  Limit Speed "
 echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
 echo -e "${GREEN}   【 Created By : https://t.me/GHReyz 】"
 echo -e "   【 Xray-Core${NC} : ${status_xray} 】   【 Nginx${NC} : ${status_nginx} 】" 
@@ -155,6 +156,10 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
        menu
     elif [[ $x -eq 17 ]]; then
        restore
+       read -n1 -r -p "Press any key to continue..."
+       menu
+elif [[ $x -eq 18 ]]; then
+       limit
        read -n1 -r -p "Press any key to continue..."
        menu
     else
