@@ -2,6 +2,7 @@
 
 <p align="center"><img src="https://i.postimg.cc/SsZSYZLq/IMG-20221211-233621.jpg"
 
+Free Installation ‼️
 License Script : premiumreyz
 
  <h2 align="center">AutoScript VPN By Reyz <img src="https://img.shields.io/badge/Version-7.0-blue.svg"></h2>
