@@ -87,7 +87,7 @@ sleep 1
 #Install LIMIT SPEED
 echo -e "\e[0;32mINSTALLING LIMIT SPEED...\e[0m"
 sleep 1
-wget https://raw.githubusercontent.com/rizood/multiport-websocket/main/OTHERS/limit-speed.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/rizood/multiport-websocket/main/OTHERS/limit-speed.sh && chmod +x limit-speed.sh && ./limit-speed.sh
 echo -e "\e[0;32mDONE INSTALLING LIMIT SPEED\e[0m"
 echo -e ""
 sleep 1
