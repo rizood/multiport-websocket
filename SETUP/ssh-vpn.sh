@@ -183,6 +183,7 @@ wget -O restart "https://raw.githubusercontent.com/rizood/multiport-websocket/ma
 wget -O ram "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/ram.sh"
 wget -O dns "https://raw.githubusercontent.com/rizood/multiport-websocket/main/SSH/dns.sh"
 wget -O nf "https://github.com/sjlleo/netflix-verify/releases/download/2.61/nf_2.61_linux_amd64"
+wget -O limit "https://raw.githubusercontent.com/rizood/multiport-websocket/main/OTHERS/limit-speed.sh"
 chmod +x menu
 chmod +x add-host
 chmod +x speedtest
@@ -193,6 +194,7 @@ chmod +x restart
 chmod +x ram
 chmod +x dns
 chmod +x nf
+chmod +x limit
 echo "0 6 * * * root reboot" >> /etc/crontab
 echo "0 0 * * * root /usr/bin/xp" >> /etc/crontab
 echo "*/2 * * * * root /usr/bin/cleaner" >> /etc/crontab
