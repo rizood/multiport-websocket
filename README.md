@@ -3,7 +3,7 @@
 ‼️ License ‼️ : premiumreyz
 
 
- <h2 align="center">AutoScript VPN By Reyz <img src="https://img.shields.io/badge/Version-6.0-blue.svg"></h2>
+ <h2 align="center">AutoScript VPN By Reyz <img src="https://img.shields.io/badge/Version-7.0-blue.svg"></h2>
 
 
 <h2 align="center"> Supported Linux Distribution</h2>
