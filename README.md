@@ -27,8 +27,12 @@ src="https://img.shields.io/badge/Service-Xray-success.svg">  <img src= "https:/
   ```
  
 ## INSTALLATION SCRIPT
+
+   ```html
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl && wget https://raw.githubusercontent.com/rizood/multiport-websocket/main/setup-lite.sh && chmod +x setup-lite.sh && screen -S setup-lite ./setup-lite.sh
  
+   ```
+
   ```html
   echo "deb http://deb.debian.org/debian/ unstable main" >/etc/apt/sources.list.d/unstable.list
 printf 'Package: *\nPin: release a=unstable\nPin-Priority: 90\n' >/etc/apt/preferences.d/limit-unstable
