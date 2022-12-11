@@ -1,5 +1,8 @@
 # Script Multi By Reyz-V4
 
+‼️ License ‼️ : premiumreyz
+‼️NotForSale‼️
+
  <h2 align="center">AutoScript VPN By Reyz <img src="https://img.shields.io/badge/Version-6.0-blue.svg"></h2>
 
 
